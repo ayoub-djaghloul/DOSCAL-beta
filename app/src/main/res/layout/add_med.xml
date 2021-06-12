@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".Medicament">
+
+    <TextView
+        android:id="@+id/MedicamentID"
+        android:background="@drawable/buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:text="Ajouter Medicament"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/photoID"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MedicamentID"
+        app:srcCompat="@drawable/medicine" />
+
+    <TextView
+        android:id="@+id/infoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Informations"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoID" />
+
+
+    <EditText
+        android:id="@+id/nommed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/edit_text_custom"
+        android:ems="10"
+        android:hint="Nom Medicament"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoID" />
+    <TextView
+        android:id="@+id/bilantxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="les bilan demandés"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nommed" />
+    <CheckBox
+        android:id="@+id/clID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clairance renale"
+        android:background="@drawable/custom_radio"
+        android:button="@android:color/transparent"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilantxt"/>
+
+    <CheckBox
+        android:id="@+id/tgoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tgo/tgp et bilirubine"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_radio"
+        android:button="@android:color/transparent"
+        android:elevation="4dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clID"/>
+
+    <Button
+        android:id="@+id/addmed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buton"
+        android:layout_margin="100dp"
+        android:text="Suivant"
+        app:layout_constraintEnd_toStartOf="@+id/returnmed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgoID" />
+
+    <Button
+        android:id="@+id/returnmed"
+        android:layout_width="wrap_content"
+        android:background="@drawable/buton"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:text="Return"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/addmed"
+        app:layout_constraintTop_toBottomOf="@+id/tgoID" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout></ScrollView>

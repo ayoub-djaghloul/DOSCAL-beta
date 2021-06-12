@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DOSECAL</string>
+    <string-array name="names">
+        <item>Clairance Renale</item>
+        <item>Bilirubine</item>
+        <item>Tgo/Tgp</item>
+    </string-array>
+</resources>

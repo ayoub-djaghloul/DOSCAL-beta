@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculator">
+
+    <EditText
+        android:id="@+id/clID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/edit_text_custom"
+        android:ems="10"
+        android:hint="Taux de Creatinine"
+        android:inputType="number"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/tgoID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bilansID" />
+
+    <EditText
+        android:id="@+id/tgoID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edit_text_custom"
+        android:ems="10"
+        android:hint="TGO/TGP"
+        android:inputType="number"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@id/biliID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clID" />
+
+    <EditText
+        android:id="@+id/biliID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/edit_text_custom"
+        android:ems="10"
+        android:hint="Bilirubine"
+        android:inputType="number"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/calculateID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tgoID" />
+
+    <TextView
+        android:id="@+id/bilansID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Bilans"
+        app:layout_constraintBottom_toTopOf="@+id/clID"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mednameID"
+         />
+
+    <EditText
+        android:id="@+id/mednameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:background="@drawable/edit_text_custom"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Med Name"
+        android:layout_marginTop="24dp"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/bilansID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.204" />
+
+    <Button
+        android:id="@+id/calculateID"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buton"
+        android:text="Caculate"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/biliID"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:importantForAutofill="auto"
+        android:ems="10"
+        android:background="@drawable/edit_text_custom"
+        android:inputType="textPersonName"
+        android:hint="Patient Name"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/mednameID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.258" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
